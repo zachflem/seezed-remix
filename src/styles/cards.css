@@ -1,0 +1,108 @@
+.section {
+  padding: 4rem 10vw;
+  min-height: 50vh;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-green);
+  display: inline-block;
+  color: var(--color-green);
+  text-shadow: 0 0 2px var(--color-green);
+}
+
+.terminal-card {
+  border: 1px solid rgba(0, 255, 65, 0.5);
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.terminal-card::before {
+  content: " ";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border: 1px solid transparent;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.terminal-card:hover {
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 15px rgba(0, 255, 245, 0.2);
+}
+
+.terminal-card:hover::before {
+  border-color: var(--color-cyan);
+  box-shadow: inset 0 0 10px rgba(0, 255, 245, 0.2);
+}
+
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.hobby-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hobby-icon {
+  font-size: 1.5rem;
+}
+
+.hobby-card h3 {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  color: var(--color-amber);
+  text-shadow: none;
+}
+
+/* Timeline specific card styles */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 2rem;
+  border-left: 1px solid var(--color-green);
+  margin-left: 1rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: " ";
+  position: absolute;
+  left: -2.4rem;
+  top: 0.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--color-green);
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--color-green);
+}
+
+.timeline-date {
+  font-family: var(--font-mono);
+  color: var(--color-amber);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.timeline-title {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--color-cyan);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,66 @@
+.tools-page {
+  padding: 8rem 10vw 4rem 10vw;
+  min-height: 100vh;
+}
+
+.tools-header {
+  margin-bottom: 4rem;
+}
+
+.tools-subtitle {
+  color: var(--color-amber);
+  font-family: var(--font-mono);
+  margin-top: 1rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tool-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.tool-badge {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid;
+}
+
+.tool-badge.pending {
+  color: var(--color-amber);
+  border-color: var(--color-amber);
+}
+
+.tool-badge.web {
+  color: var(--color-cyan);
+  border-color: var(--color-cyan);
+}
+
+.tool-description {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.tool-action button {
+  width: 100%;
+}
+
+.tool-action button:disabled {
+  border-color: #333;
+  color: #555;
+  cursor: not-allowed;
+  box-shadow: none;
+}

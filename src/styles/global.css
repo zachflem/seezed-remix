@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  /* Terminal Layer (Base) */
+  --color-bg: #0a0a0a;
+  --color-green: #00ff41;
+  --color-amber: #ffb700;
+
+  /* Glitch / Accent Layer (Interactive) */
+  --color-cyan: #00fff5;
+  --color-magenta: #ff00c8;
+
+  /* Typography */
+  --font-mono: 'Fira Code', monospace;
+  --font-sans: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-green);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* CRT Scanline Overlay */
+body::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: var(--color-cyan);
+  text-shadow: 0 0 5px var(--color-cyan), 0 0 10px var(--color-cyan);
+}
+
+h2, h3 {
+  color: var(--color-green);
+  text-shadow: 0 0 2px var(--color-green);
+}
+
+a {
+  color: var(--color-green);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  transition: all 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--color-cyan);
+  text-shadow: 0 0 5px var(--color-cyan);
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--color-green);
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover, button:focus {
+  border-color: var(--color-cyan);
+  color: var(--color-cyan);
+  box-shadow: 0 0 10px var(--color-cyan), inset 0 0 5px var(--color-cyan);
+}
+
+hr {
+  border: 0;
+  border-top: 1px dashed var(--color-amber);
+  margin: 3rem 0;
+}
+
+/* Base keyframes for specific visual effects */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes glitch-anim-1 {
+  0% { clip-path: inset(20% 0 80% 0); transform: translate(-2px, 1px); }
+  20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -1px); }
+  40% { clip-path: inset(40% 0 50% 0); transform: translate(-2px, 2px); }
+  60% { clip-path: inset(80% 0 5% 0); transform: translate(2px, -2px); }
+  80% { clip-path: inset(10% 0 70% 0); transform: translate(-1px, 1px); }
+  100% { clip-path: inset(30% 0 50% 0); transform: translate(1px, -1px); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip-path: inset(10% 0 60% 0); transform: translate(2px, -1px); }
+  20% { clip-path: inset(30% 0 20% 0); transform: translate(-2px, 2px); }
+  40% { clip-path: inset(70% 0 10% 0); transform: translate(1px, -1px); }
+  60% { clip-path: inset(20% 0 50% 0); transform: translate(-1px, 1px); }
+  80% { clip-path: inset(50% 0 30% 0); transform: translate(2px, -2px); }
+  100% { clip-path: inset(5% 0 80% 0); transform: translate(-2px, 1px); }
+}
