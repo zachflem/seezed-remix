@@ -1,9 +1,18 @@
+import { useEffect } from 'react';
 import GlitchText from '../components/GlitchText';
 import TerminalCard from '../components/TerminalCard';
 
 import '../styles/tools.css';
 
 export default function Tools() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://monster-hunter.zachflem.workers.dev/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
+
   return (
     <div className="tools-page">
       <div className="tools-header">
@@ -36,9 +45,8 @@ export default function Tools() {
               <button>[ VIEW SCRIPT ]</button>
             </a>
           </div>
-          {/* Monster Hunter*/}
+          
           <div data-monster-hunter></div>
-          <script src="https://monster-hunter.zachflem.workers.dev/embed.js"></script>
 
         </TerminalCard>
         
