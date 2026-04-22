@@ -179,6 +179,86 @@ export default function Home() {
       {/* 5. Work History Section */}
       <section id="work" className="section-panel">
         <h2 className="section-title">// WHAT PAYS THE BILLS</h2>
+          <h3 classname="section-title">| Cranes & Rigging</h3>
+          <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
+            <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
+              <img
+                src="/cranes.jpeg"
+                alt="big crane lift heavy thing"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                  border: '1px solid var(--color-bg-light)',
+                  boxShadow: '4px 4px 0px rgba(255, 176, 0, 0.3)'
+                }}
+              />
+            </div>
+
+            <div className="about-text" style={{ flex: '2 1 400px' }}>
+              <p style={{ marginBottom: '1.0rem' }}>
+                Between major telco projects I took some time to get into the general crane hire industry.  Starting as a Dogman and Rigger, I progressed to a point where I was operating cranes in the Open Class (C0) of machines (Over 100t)  My time in the crane yard only made me a better rigger, which directly translated when I eventually moved back into the Telecommunications world.
+              </p>
+              <p style={{ marginBottom: '1.rem' }}>
+                In 2025, after nearly a decade away from a crane, I returned to the operators seat to join Lando Hire 
+              </p>
+            </div>
+          </div>
+
+          <h3 classname="section-title">| The Internet of Things</h3>
+          <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
+            <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
+              <img
+                src="/iot.jpeg"
+                alt="iot ball of connected stuff"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                  border: '1px solid var(--color-bg-light)',
+                  boxShadow: '4px 4px 0px rgba(255, 176, 0, 0.3)'
+                }}
+              />
+            </div>
+
+            <div className="about-text" style={{ flex: '2 1 400px' }}>
+              <p style={{ marginBottom: '1.0rem' }}>
+                I have been employed as an IoT Specialist at a number of local and international technology providers.
+              </p>
+              <p style={{ marginBottom: '1.rem' }}>
+                At <a href="https://www.assetaware.com.au/" target="_blank" rel="noopener noreferrer">AssetAware IOT</a>, as part of <a href="https://www.aaradio.com.au/" target="_blank" rel="noopener noreferrer">AARadio Services</a>, where our aim was to provide custom solutions around data acquisition, analysis and automation.
+              </p>
+              <p style={{ marginBottom: '1.rem' }}>
+                At <a href="https://www.fieldin.com/" target="_blank" rel="noopener noreferrer">Fieldin</a>, I was the Australian Service Manager.  In charge of a team of service technicians providing installation and maintenance across telematics hardware in customer fleets.
+              </p>
+            </div>
+          </div>
+
+          <h3 classname="section-title">| Telecommunications</h3>
+          <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
+            <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
+              <img
+                src="/upTower.jpeg"
+                alt="bearded man up a tower in the wind"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                  border: '1px solid var(--color-bg-light)',
+                  boxShadow: '4px 4px 0px rgba(255, 176, 0, 0.3)'
+                }}
+              />
+            </div>
+
+            <div className="about-text" style={{ flex: '2 1 400px' }}>
+              <p style={{ marginBottom: '1.0rem' }}>
+                I've previously worked in the Telecommunications industry in a range of roles.  Building and maintaining network infrastructure from dirt to full site, I've been involved in every aspect of the telecommunications lifecycle, from DC Power, Transmission & Switching equipment in the exchange, to Microwave and  cellular hardware on the mobile site. I've even built towers from scratch.
+              </p>
+
+            </div>
+          </div>
+
+        <h2 className="section-title">// HISTORICAL RECORDS</h2>
         <WorkTimeline entries={workHistory} />
       </section>
 
