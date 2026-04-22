@@ -49,9 +49,38 @@
   border-color: var(--color-cyan);
 }
 
+.tool-card-title {
+  margin: 0;
+  text-shadow: none;
+  color: var(--color-green);
+}
+
 .tool-description {
   flex-grow: 1;
   margin-bottom: 1.5rem;
+}
+
+.tool-embed-label {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  color: var(--color-amber);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.tool-embed-snippet {
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  border-left: 3px solid var(--color-green);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-green);
+  overflow-x: auto;
+  white-space: pre;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .tool-action button {

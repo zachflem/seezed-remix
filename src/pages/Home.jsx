@@ -252,7 +252,7 @@ export default function Home() {
                 Between major telco projects I took some time to get into the general crane hire industry.  Starting as a Dogman and Rigger, I progressed to a point where I was operating cranes in the Open Class (C0) of machines (Over 100t)  My time in the crane yard only made me a better rigger, which directly translated when I eventually moved back into the Telecommunications world.
               </p>
               <p style={{ marginBottom: '1.rem' }}>
-                In 2025, after nearly a decade away from a crane, I returned to the operators seat to join Lando Hire 
+                In 2025, after nearly a decade away from a crane, I returned to the operators seat to join <a href="https://www.landohire.com/" target="_blank" rel="noopener noreferrer">Lando Hire</a>.
               </p>
             </div>
           </div>
