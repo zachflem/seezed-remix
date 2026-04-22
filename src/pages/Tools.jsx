@@ -56,8 +56,14 @@ export default function Tools() {
           </div>
           
           <div className="tool-widget-container">
-            <div data-monster-hunter></div>
+            <div
+              data-monster-hunter
+              data-flavor="zero-ultra"
+              data-postcode="3500"
+              >
+            </div>
           </div>
+
 
         </TerminalCard>
         
