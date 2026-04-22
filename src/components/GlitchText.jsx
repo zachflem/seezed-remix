@@ -1,7 +1,7 @@
 export default function GlitchText({ text, as: Component = 'h1', className = '' }) {
   return (
-    <div className={`glitch-container ${className}`}>
-      <Component className="glitch-text" data-text={text}>
+    <div className="glitch-container">
+      <Component className={`glitch-text ${className}`} data-text={text}>
         {text}
       </Component>
     </div>

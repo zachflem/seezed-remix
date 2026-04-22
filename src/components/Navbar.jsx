@@ -14,12 +14,12 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-brand">
-        <NavLink to="/#home" onClick={() => window.scrollTo(0,0)}>
+        <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
           seezed.net
         </NavLink>
       </div>
-      
-      <button 
+
+      <button
         className="hamburger"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
@@ -35,7 +35,9 @@ export default function Navbar() {
             or we can just link to /#about if we want to build a smooth scrolling hook.
             For simplicity: */}
         <a href="/#about" onClick={() => setIsOpen(false)}>About</a>
-        <a href="/#hobbies" onClick={() => setIsOpen(false)}>Hobbies</a>
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>
+          Projects
+        </NavLink>
         <NavLink to="/tools" className={({ isActive }) => isActive ? 'active' : ''}>
           Tools
         </NavLink>

@@ -1,0 +1,25 @@
+.site-footer {
+  width: 100%;
+  padding: 0.75rem 10vw;
+  border-top: 1px dashed var(--color-amber);
+  background-color: var(--color-bg);
+  color: var(--color-green);
+  font-family: var(--font-mono);
+  text-align: left;
+  scroll-snap-align: end;
+}
+
+.footer-content {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.footer-content a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+}
+
+.footer-content a:hover {
+  text-shadow: 0 0 5px var(--color-cyan);
+}

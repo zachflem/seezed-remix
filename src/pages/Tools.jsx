@@ -16,7 +16,7 @@ export default function Tools() {
   return (
     <div className="tools-page">
       <div className="tools-header">
-        <GlitchText text="// TOOLS" as="h1" />
+        <GlitchText text="// TOOLS" as="h1" className="glitch-large" />
         <div className="tools-subtitle">
           Practical tools built to solve real problems.
         </div>

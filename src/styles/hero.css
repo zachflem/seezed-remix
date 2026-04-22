@@ -6,6 +6,7 @@
   align-items: flex-start;
   padding: 0 10vw;
   position: relative;
+  scroll-snap-align: start;
 }
 
 .hero-subtitle {
@@ -31,13 +32,31 @@
 }
 
 .glitch-text {
-  font-size: 5rem;
   font-weight: 700;
   position: relative;
   color: var(--color-cyan);
   text-shadow: 0 0 10px var(--color-cyan);
-  text-transform: uppercase;
+}
+
+/* Sizing Utilities */
+.glitch-large {
+  font-size: 3rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.glitch-inline {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 3px var(--color-cyan);
+  text-transform: none;
+}
+
+.glitch-small {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.8;
 }
 
 /* Glitch Pseudo Elements */
@@ -52,21 +71,48 @@
   background: var(--color-bg);
 }
 
-.glitch-text::before {
+/* Pseudo element offsets for LARGE titles */
+.glitch-large::before {
   left: -2px;
   text-shadow: 2px 0 var(--color-magenta);
-  animation: glitch-anim-1 2s infinite linear alternate-reverse;
+  animation: glitch-anim-1 10s infinite linear alternate-reverse;
 }
 
-.glitch-text::after {
+.glitch-large::after {
   left: 2px;
   text-shadow: -2px 0 var(--color-cyan);
-  animation: glitch-anim-2 3s infinite linear alternate-reverse;
+  animation: glitch-anim-2 14s infinite linear alternate-reverse;
+}
+
+/* Pseudo element offsets for INLINE text */
+.glitch-inline::before {
+  left: -1px;
+  text-shadow: 1px 0 var(--color-magenta);
+  animation: glitch-anim-1 12s infinite linear alternate-reverse;
+}
+
+.glitch-inline::after {
+  left: 1px;
+  text-shadow: -1px 0 var(--color-cyan);
+  animation: glitch-anim-2 7s infinite linear alternate-reverse;
+}
+
+/* Pseudo element offsets for SMALL text */
+.glitch-small::before {
+  left: -1px;
+  text-shadow: 1px 0 var(--color-magenta);
+  animation: glitch-anim-1 6s infinite linear alternate-reverse;
+}
+
+.glitch-small::after {
+  left: 1px;
+  text-shadow: -1px 0 var(--color-cyan);
+  animation: glitch-anim-2 8s infinite linear alternate-reverse;
 }
 
 @media (max-width: 768px) {
-  .glitch-text {
-    font-size: 3rem;
+  .glitch-large {
+    font-size: 1.5rem;
   }
   .hero-subtitle {
     font-size: 1rem;

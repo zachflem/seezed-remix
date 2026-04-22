@@ -1,0 +1,162 @@
+.projects-page {
+  padding: 8rem 10vw 4rem 10vw;
+  min-height: 100vh;
+}
+
+.projects-header {
+  margin-bottom: 4rem;
+  scroll-snap-align: start;
+}
+
+.projects-subtitle {
+  color: var(--color-amber);
+  font-family: var(--font-mono);
+  margin-top: 1rem;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1000px;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-title {
+  color: var(--color-cyan);
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  text-shadow: 0 0 5px rgba(0, 255, 245, 0.4);
+}
+
+.status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-badge.wip {
+  color: var(--color-amber);
+  border-color: var(--color-amber);
+  box-shadow: 0 0 5px rgba(255, 183, 0, 0.2);
+}
+
+.status-badge.beta {
+  color: var(--color-cyan);
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 5px rgba(0, 255, 245, 0.2);
+}
+
+.status-badge.live {
+  color: var(--color-green);
+  border-color: var(--color-green);
+  box-shadow: 0 0 5px rgba(0, 255, 65, 0.2);
+}
+
+.project-link {
+  font-family: var(--font-mono);
+  color: var(--color-green);
+  border: 1px solid var(--color-green);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: var(--color-green);
+  color: var(--color-bg);
+  box-shadow: 0 0 10px var(--color-green);
+}
+
+.project-body {
+  /* Remove grid to allow for natural wrapping across the whole body container */
+  display: block;
+}
+
+.project-description p {
+  margin-bottom: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.project-features {
+  margin-top: 1.5rem;
+  clear: left; /* Ensure features stay below description if space allows, but can still wrap the float */
+}
+
+.project-features h4 {
+  font-size: 0.9rem;
+  color: var(--color-amber);
+  margin-bottom: 1rem;
+}
+
+.project-features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-features li {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-green);
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.project-features li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: var(--color-cyan);
+}
+
+.project-card-image {
+  float: right;
+  max-width: 40%;
+  height: auto;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-bg-light);
+  box-shadow: 4px 4px 0px rgba(255, 176, 0, 0.3);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .project-body {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-card-image {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+}
