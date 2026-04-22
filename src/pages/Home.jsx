@@ -161,7 +161,7 @@ export default function Home() {
           <HobbyCard
             icon="🚵"
             title="4WD & Mountain Biking"
-            description="We've never let a bit of mud, or a weird looking trail stop us fromt getting to the cool spots.  4 wheels or 2, we're there. We've done tents, soft and hard floor camper trailers and now we're hitting the road in a caravan.  Needless to say, we don't mind stretching our legs and seeing a bit."
+            description="We've never let a bit of mud, or a weird looking trail stop us from getting to the cool spots.  4 wheels or 2, we're there. We've done tents, soft and hard floor camper trailers and now we're hitting the road in a caravan.  Needless to say, we don't mind stretching our legs and seeing a bit."
           />
           <HobbyCard
             icon="🪂"
