@@ -106,14 +106,14 @@ export default function Home() {
             <p style={{ marginBottom: '1.0rem' }}>
               For years, if you asked my wife what I do for a living, she'd say "I don't know, something with mobile phone towers." That's not a great sign.
             </p>
-            <p style={{ marginBottom: '1.rem' }}>
+            <p style={{ marginBottom: '1.0rem' }}>
               The honest answer is: <em>it depends who's asking.</em>
             </p>
             <p style={{ marginBottom: '0.5rem' }}>
               For the people on site, I'm a crane operator — open class, high-risk lifts, the kind of job where you don't get to have a bad day.
             </p>
             <p style={{ marginBottom: '0.5rem' }}>
-              For the people online, I'm the guy accumulating hobbies "("at a rate that slightly concerns his family")"— mostly involving computers, automation, and making things do things they weren't necessarily supposed to do.
+              For the people online, I'm the guy accumulating hobbies (at a rate that slightly concerns his family)— mostly involving computers, automation, and making things do things they weren't necessarily supposed to do.
             </p>
             <p style={{ marginBottom: '0.5rem' }}>
               For my family, I'm mostly just Dad. Which is the one I take most seriously.
@@ -181,7 +181,7 @@ export default function Home() {
         <h2 className="section-title">// WHAT PAYS THE BILLS</h2>
           
           <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
-            <h3 classname="section-title">| The Internet of Things</h3>
+            <h3 className="section-title">| The Internet of Things</h3>
             <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
               <img
                 src="/iot.jpeg"
@@ -229,6 +229,7 @@ export default function Home() {
             <div className="about-text" style={{ flex: '2 1 400px' }}>
               <p style={{ marginBottom: '1.0rem' }}>
                 I got into telecommunications in the early 2000s, and spent a good chunk of my career working on mobile phone towers, microwave links, and all the other fun stuff that goes into keeping us connected.  I got to work with some of the old guard, who taught me a lot about how we communicate, and I got to see some of those old technologies get swallowed up by a new era.  I've climbed towers in the dark, run around the country supporting mobile sites with backup power, and that's on;y just scratching the surface.
+              </p>
             </div>
           </div>
           
