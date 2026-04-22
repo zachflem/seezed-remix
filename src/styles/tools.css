@@ -87,6 +87,12 @@
   width: 100%;
 }
 
+.tool-widget-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
 .tool-action button:disabled {
   border-color: #333;
   color: #555;
