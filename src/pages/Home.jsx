@@ -179,9 +179,8 @@ export default function Home() {
       {/* 5. Work History Section */}
       <section id="work" className="section-panel">
         <h2 className="section-title">// WHAT PAYS THE BILLS</h2>
-          
+          <h3 className="section-title">| The Internet of Things</h3>
           <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
-            <h3 className="section-title">| The Internet of Things</h3>
             <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
               <img
                 src="/iot.jpeg"
@@ -209,9 +208,8 @@ export default function Home() {
             </div>
           </div>
 
-          
+          <h3 classname="section-title">| Telecommunications</h3>
           <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
-            <h3 classname="section-title">| Telecommunications</h3>
             <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
               <img
                 src="/upTower.jpeg"
@@ -233,8 +231,8 @@ export default function Home() {
             </div>
           </div>
           
+          <h3 classname="section-title">| Cranes & Rigging</h3>
           <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
-            <h3 classname="section-title">| Cranes & Rigging</h3>
             <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
               <img
                 src="/cranes.jpeg"
