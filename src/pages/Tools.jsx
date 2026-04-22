@@ -36,11 +36,12 @@ export default function Tools() {
               <button>[ VIEW SCRIPT ]</button>
             </a>
           </div>
+          {/* Monster Hunter*/}
+          <div data-monster-hunter></div>
+          <script src="https://monster-hunter.zachflem.workers.dev/embed.js"></script>
+
         </TerminalCard>
         
-        {/* Monster Hunter*/}
-        <div data-monster-hunter></div>
-        <script src="https://monster-hunter.zachflem.workers.dev/embed.js"></script>
 
       </div>
     </div>
