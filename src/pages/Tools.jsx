@@ -46,7 +46,9 @@ export default function Tools() {
             </a>
           </div>
           
-          <div data-monster-hunter></div>
+          <div className="tool-widget-container">
+            <div data-monster-hunter></div>
+          </div>
 
         </TerminalCard>
         
