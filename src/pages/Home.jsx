@@ -258,7 +258,7 @@ export default function Home() {
             </div>
           </div>
 
-        <h2 className="section-title">// HISTORICAL RECORDS</h2>
+        <h2 className="section-title">// WORK HISTORY TIMELINE</h2>
         <WorkTimeline entries={workHistory} />
       </section>
 
