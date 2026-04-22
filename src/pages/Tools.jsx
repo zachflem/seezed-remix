@@ -37,7 +37,16 @@ export default function Tools() {
               near you — updated daily.
             </p>
             <p className="tool-embed-label">Embed on your site:</p>
-            <pre className="tool-embed-snippet"><code>{`<div data-monster-hunter></div>
+            <pre className="tool-embed-snippet"><code>{`<!-- visitors enter their own preferences -->
+<div data-monster-hunter></div>
+
+<!-- or pre-select defaults (visitors can still change them) -->
+<div
+  data-monster-hunter
+  data-flavor="original"
+  data-postcode="3000"
+></div>
+
 <script src="https://monster-hunter.zachflem.workers.dev/embed.js"></script>`}</code></pre>
           </div>
           <div className="tool-action">
