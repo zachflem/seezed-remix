@@ -179,8 +179,61 @@ export default function Home() {
       {/* 5. Work History Section */}
       <section id="work" className="section-panel">
         <h2 className="section-title">// WHAT PAYS THE BILLS</h2>
-          <h3 classname="section-title">| Cranes & Rigging</h3>
+          
           <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
+            <h3 classname="section-title">| The Internet of Things</h3>
+            <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
+              <img
+                src="/iot.jpeg"
+                alt="iot ball of connected stuff"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                  border: '1px solid var(--color-bg-light)',
+                  boxShadow: '4px 4px 0px rgba(255, 176, 0, 0.3)'
+                }}
+              />
+            </div>
+
+            <div className="about-text" style={{ flex: '2 1 400px' }}>
+              <p style={{ marginBottom: '1.0rem' }}>
+                IoT is an interesting space to explore.  it's allowed me to delve into hardware, software and see all the ways they can work together to solve problems.  It's also given me a chance to work with some really cool people, and see some really cool things in action.  From smart farming solutions, to asset tracking and telematics, it's been a wild ride.
+              </p>
+              <p style={{ marginBottom: '1.rem' }}>
+                At <a href="https://www.assetaware.com.au/" target="_blank" rel="noopener noreferrer">AssetAware IOT</a>, as part of <a href="https://www.aaradio.com.au/" target="_blank" rel="noopener noreferrer">AARadio Services</a>, where our aim was to provide custom solutions around data acquisition, analysis and automation.
+              </p>
+              <p style={{ marginBottom: '1.rem' }}>
+                At <a href="https://www.fieldin.com/" target="_blank" rel="noopener noreferrer">Fieldin</a>, I was the Australian Service Manager.  In charge of a team of service technicians providing installation and maintenance across telematics hardware in customer fleets.
+              </p>
+            </div>
+          </div>
+
+          
+          <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
+            <h3 classname="section-title">| Telecommunications</h3>
+            <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
+              <img
+                src="/upTower.jpeg"
+                alt="bearded man up a tower in the wind"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '4px',
+                  border: '1px solid var(--color-bg-light)',
+                  boxShadow: '4px 4px 0px rgba(255, 176, 0, 0.3)'
+                }}
+              />
+            </div>
+
+            <div className="about-text" style={{ flex: '2 1 400px' }}>
+              <p style={{ marginBottom: '1.0rem' }}>
+                I got into telecommunications in the early 2000s, and spent a good chunk of my career working on mobile phone towers, microwave links, and all the other fun stuff that goes into keeping us connected.  I got to work with some of the old guard, who taught me a lot about how we communicate, and I got to see some of those old technologies get swallowed up by a new era.  I've climbed towers in the dark, run around the country supporting mobile sites with backup power, and that's on;y just scratching the surface.
+            </div>
+          </div>
+          
+          <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
+            <h3 classname="section-title">| Cranes & Rigging</h3>
             <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
               <img
                 src="/cranes.jpeg"
@@ -202,59 +255,6 @@ export default function Home() {
               <p style={{ marginBottom: '1.rem' }}>
                 In 2025, after nearly a decade away from a crane, I returned to the operators seat to join Lando Hire 
               </p>
-            </div>
-          </div>
-
-          <h3 classname="section-title">| The Internet of Things</h3>
-          <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
-            <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
-              <img
-                src="/iot.jpeg"
-                alt="iot ball of connected stuff"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  borderRadius: '4px',
-                  border: '1px solid var(--color-bg-light)',
-                  boxShadow: '4px 4px 0px rgba(255, 176, 0, 0.3)'
-                }}
-              />
-            </div>
-
-            <div className="about-text" style={{ flex: '2 1 400px' }}>
-              <p style={{ marginBottom: '1.0rem' }}>
-                I have been employed as an IoT Specialist at a number of local and international technology providers.
-              </p>
-              <p style={{ marginBottom: '1.rem' }}>
-                At <a href="https://www.assetaware.com.au/" target="_blank" rel="noopener noreferrer">AssetAware IOT</a>, as part of <a href="https://www.aaradio.com.au/" target="_blank" rel="noopener noreferrer">AARadio Services</a>, where our aim was to provide custom solutions around data acquisition, analysis and automation.
-              </p>
-              <p style={{ marginBottom: '1.rem' }}>
-                At <a href="https://www.fieldin.com/" target="_blank" rel="noopener noreferrer">Fieldin</a>, I was the Australian Service Manager.  In charge of a team of service technicians providing installation and maintenance across telematics hardware in customer fleets.
-              </p>
-            </div>
-          </div>
-
-          <h3 classname="section-title">| Telecommunications</h3>
-          <div className="about-grid" style={{ display: 'flex', flexWrap: 'wrap', gap: '2.5rem', maxWidth: '1000px', marginBottom: '2rem', alignItems: 'flex-start' }}>
-            <div className="about-image" style={{ flex: '1 1 300px', maxWidth: '350px' }}>
-              <img
-                src="/upTower.jpeg"
-                alt="bearded man up a tower in the wind"
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  borderRadius: '4px',
-                  border: '1px solid var(--color-bg-light)',
-                  boxShadow: '4px 4px 0px rgba(255, 176, 0, 0.3)'
-                }}
-              />
-            </div>
-
-            <div className="about-text" style={{ flex: '2 1 400px' }}>
-              <p style={{ marginBottom: '1.0rem' }}>
-                I've previously worked in the Telecommunications industry in a range of roles.  Building and maintaining network infrastructure from dirt to full site, I've been involved in every aspect of the telecommunications lifecycle, from DC Power, Transmission & Switching equipment in the exchange, to Microwave and  cellular hardware on the mobile site. I've even built towers from scratch.
-              </p>
-
             </div>
           </div>
 
