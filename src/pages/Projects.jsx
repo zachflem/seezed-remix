@@ -42,6 +42,22 @@ export default function Projects() {
       image: '/Schedule-Lab.png' // Optional: Add your image to /public and link here.  use 'null' for no image.
     },
     {
+      id: 'court-admin',
+      title: 'CourtAdmin',
+      description: 'Born from the depths of endless spreadsheets and the need for a better, centralised place to manage a community basketball club, CourtAdmin was built to be a one-stop-shop for busy parents and volunteers.  \n\n Handling all the tedious elements of running a community basketball club - Expressions of Interest, Sponsors, Venue Bookings, Team Management and Feedback amongst other things - CourtAdmin is designed to make the lives of volunteers easier, and give parents and players a better experience.',
+      features: [
+        'Manage individual seasons for your club - with all the relevant information and data stored in one place',
+        'Players (and parents) can manage their own profiles, and keep all their information up to date',
+        'Handle all your sponsors in one place - with different levels of sponsorship, and the ability to manage their details',
+        'Email campaign management - send out emails to your members, with different lists and templates',
+        'A public Expression of Interest portal for new and returning players to register their interest in playing for the upcoming season',
+        'Venue booking management - keep track of your venues, and manage your bookings for the season',
+      ],
+      status: 'ALPHA',
+      link: 'https://courtadmin.seezed.net',
+      image: '/CourtAdmin.png' // Optional: Add your image to /public and link here.  use 'null' for no image.
+    },
+    {
       id: 'brrw',
       title: 'BRRW.net',
       description: 'brrw (is pronounced exactly like *burrow*) — as in what a rabbit does. You dig in. You go somewhere small and specific and interesting. You explore.\n\n That\'s what the internet used to feel like.\n\n In the 90s and early 2000s, finding something good online felt like discovery. You\'d follow a link from one personal site to another, stumble into someone\'s corner of the web, and find writing that was weird and specific and entirely theirs.\n\n There was no feed, no algorithm, no follower count telling you what mattered. \n\nYou just dug around until you found something that resonated — and then you bookmarked it, and told your friends, and went back.',

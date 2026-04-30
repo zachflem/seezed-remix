@@ -135,6 +135,9 @@ export default function Home() {
           <TerminalCard href="/projects">
             <strong>Schedule-Lab</strong>: Asset and Personnel scheduling for the smaller operator.  Get jobs done, dockets signed, and invoices out.
           </TerminalCard>
+          <TerminalCard href="/projects">
+            <strong>CourtAdmin</strong>: A centralised platform for managing a community basketball club. Because being burried under endless spreadsheets isn't fun.
+          </TerminalCard>
           <TerminalCard href="http://www.brrw.net">
             <strong>BRRW.net</strong>: It's not about going viral. It's about finding your village — and letting your village find you. Small sites. Real voices. The web the way it was supposed to feel.
           </TerminalCard>
