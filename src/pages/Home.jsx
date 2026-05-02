@@ -73,14 +73,21 @@ export default function Home() {
     <div className="home-container">
       {/* 1. Hero Section */}
       <section id="home" className="hero">
-        <GlitchText text="Works in progress. All of them." className="glitch-large" />
-        <div className="hero-subtitle" style={{ maxWidth: '800px', lineHeight: '1.6' }}>
-          This site is what happens when a chaos engineer has too many hobbies and just enough time to half-finish them. The crane operating pays the bills. The nerd shit keeps the lights on in my head. Everything else is a feature, not a bug.<span className="cursor-blink">_</span>
-        </div>
-        <div className="hero-ctas">
-          <a href="#about"><button>[ ABOUT ME ]</button></a>
-          <a href="#projects"><button>[ PROJECTS ]</button></a>
-          <Link to="/tools"><button>[ MY TOOLS ]</button></Link>
+        <div className="hero-inner">
+          <div className="hero-logo-wrap">
+            <img src="/seezedLogo.png" alt="Seezed logo" className="hero-logo" />
+          </div>
+          <div className="hero-text">
+            <GlitchText text="Works in progress. All of them." className="glitch-large" />
+            <div className="hero-subtitle" style={{ maxWidth: '800px', lineHeight: '1.6' }}>
+              This site is what happens when a chaos engineer has too many hobbies and just enough time to half-finish them. The crane operating pays the bills. The nerd shit keeps the lights on in my head. Everything else is a feature, not a bug.<span className="cursor-blink">_</span>
+            </div>
+            <div className="hero-ctas">
+              <a href="#about"><button>[ ABOUT ME ]</button></a>
+              <a href="#projects"><button>[ PROJECTS ]</button></a>
+              <Link to="/tools"><button>[ MY TOOLS ]</button></Link>
+            </div>
+          </div>
         </div>
       </section>
 
